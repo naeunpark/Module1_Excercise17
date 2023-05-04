@@ -18,13 +18,17 @@ function diceGetReady(event) {
     }
 }
 
-function generateNumber() {
-    let selectedDice = Number(selectedNumberOfDiceSides.value);
-    let randomNumber = Math.floor(Math.random() * selectedDice) + 1;
+function getMaxNumber() {
+    let maxNumber = Number(selectedNumberOfDiceSides.value);
+    generateNumber(maxNumber);
+}
 
-    image.src = `./images/dice-${selectedDice}/dice-${selectedDice}-faces-${randomNumber}.png`;
+function generateNumber(maxNumber) {
+    let randomNumber = Math.floor(Math.random() * maxNumber) + 1;
+
+    image.src = `./images/dice-${maxNumber}/dice-${maxNumber}-faces-${randomNumber}.png`;
 }
 
 window.addEventListener("load", diceGetReady);
 selectedNumberOfDiceSides.addEventListener("change", diceGetReady);
-btn.addEventListener("click", generateNumber);
+btn.addEventListener("click", getMaxNumber);
