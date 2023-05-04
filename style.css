@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+.lightmode {
+    background-color: white;
+    color: black;
+}
+
+header {
+    margin-top: 5rem;
+}
+
+#diceImgContainer {
+    width: 400px;
+}
+
+#diceImg {
+    width: 100%;
+}
+
+#diceActionContainer div {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 80px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
