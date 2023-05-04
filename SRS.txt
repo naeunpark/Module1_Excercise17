@@ -1,0 +1,8 @@
+ * Define on paper, all the use cases (functionalities) you will need for this page *
+1. make a select input box for users to choose either D6 or D10.
+2. make a button to play rolling the dice and extract the random number within the dice faces number.
+
+* STORYBOARD OF THE USER USING SYSTEM *
+1. user can choose the number of dice faces between D6 and D10.
+2. user need button to generator the dice randomly.
+3. once user generator the dice number, user can see the result of dice generator.
